@@ -4,8 +4,7 @@ import java.awt.*;
 
 public class TaskOne extends JFrame {
 
-    public static Shape getRandomShape()
-    {
+    public static Shape getRandomShape() {
         int rand = (int)(Math.random() * 3);
         if (rand == 0)
             return new Rectangle();
@@ -15,24 +14,19 @@ public class TaskOne extends JFrame {
             return new Square();
     }
 
-    public void paint(Graphics g)
-    {
+    public void paint(Graphics g) {
         super.paint(g);
         for (int i = 0, x = 15; i < 5; ++i, x += 280)
-            for (int j = 0, y = 35; j < 4; ++j, y += 175)
-            {
-                // Случайный цвет
+            for (int j = 0, y = 35; j < 4; ++j, y += 175) {
                 int red = (int) (Math.random() * 255);
                 int green = (int) (Math.random() * 255);
                 int blue = (int) (Math.random() * 255);
 
-                // Случайная фигура
                 Shape sh = getRandomShape();
                 sh.setX(x);
                 sh.setY(y);
                 sh.setColor(new Color(red, green, blue));
 
-                // Отрисовка
                 g.setColor(sh.getColor());
                 if (sh.getClass().getSimpleName().equals("Square"))
                     g.fillRect(sh.getX(), sh.getY(), 150, 150);
@@ -47,8 +41,7 @@ public class TaskOne extends JFrame {
         TaskOne tw = new TaskOne();
     }
 
-    public TaskOne()
-    {
+    public TaskOne() {
         super("Shapes");
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setSize(1920,1080);

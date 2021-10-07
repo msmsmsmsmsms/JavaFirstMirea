@@ -44,7 +44,7 @@ class Rectangle extends Shape
         return width * length;
     }
 
-    public double getPerimetr()
+    public double getPerimeter()
     {
         return width + width + length + length;
     }

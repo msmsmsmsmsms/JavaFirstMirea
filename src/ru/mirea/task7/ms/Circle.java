@@ -33,7 +33,7 @@ class Circle extends Shape
     {
         return 3.14 * radius * radius;
     }
-    public double getPerimetr()
+    public double getPerimeter()
     {
         return 2 * 3.14 * radius;
     }
