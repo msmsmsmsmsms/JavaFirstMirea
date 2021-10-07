@@ -5,10 +5,10 @@ public class Ball {
     private String colour;
     private String owner;
 
-    public Ball(int s, String c, String o) {
-        size = s;
-        colour = c;
-        owner = o;
+    public Ball(int size, String colour, String owner) {
+        this.size = size;
+        this.colour = colour;
+        this.owner = owner;
     }
 
     public Ball(int s, String c) {
