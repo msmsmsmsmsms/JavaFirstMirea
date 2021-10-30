@@ -55,7 +55,7 @@ public class TaskThree extends JPanel {
     };
 
     public void paint(Graphics canvas) {
-        canvas.drawImage(image, 0, 0,  null);
+        canvas.drawImage(image, 0, 0,null);
     }
 
     public static void main(String[] args) {
