@@ -42,7 +42,7 @@ public class App extends JFrame{
 
         // Итог
         Result_LBL = new JLabel(String.format("Result: %d x %d", Milan_score, Real_score));
-        Result_LBL.setBounds(800,270,400,50);
+        Result_LBL.setBounds(770,270,400,50);
         Result_LBL.setFont(MainFont);
 
         // Последний забивший
