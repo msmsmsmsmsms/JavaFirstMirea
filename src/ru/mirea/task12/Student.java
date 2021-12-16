@@ -1,47 +1,34 @@
 package ru.mirea.task12;
 
 public class Student {
-    public int id;
-    public String name;
-    public int pts;
+    private int Id;
+    private String Name;
+    private int Score;
 
-
-    public Student(){}
-    public Student(int id, String name, int pts) {
-        this.id = id;
-        this.name = name;
-        this.pts = pts;
+    public Student(int Id, String Name, int Score) {
+        setId(Id);
+        setName(Name);
+        setScore(Score);
     }
 
-    public int getId() {
-        return id;
-    }
+    public int getId() { return Id; }
 
-    public void setId(int id) {
-        this.id = id;
-    }
+    public void setId(int id) { Id = id; }
 
-    public String getName() {
-        return name;
-    }
+    public int getScore() { return Score; }
 
-    public void setName(String name) {
-        this.name = name;
-    }
+    public void setScore(int score) { Score = score; }
 
-    public int getPts() {
-        return pts;
-    }
+    public String getName() { return Name; }
 
-    public void setPts(int pts) {
-        this.pts = pts;
-    }
+    public void setName(String name) { Name = name; }
 
     @Override
     public String toString() {
-        return "Student: " +
-                "id = " + id +
-                ", name = '" + name + '\'' +
-                ", pts = " + pts;
+        return "Student{" +
+                "Id=" + Id +
+                ", Name='" + Name + '\'' +
+                ", Score=" + Score +
+                '}';
     }
 }
