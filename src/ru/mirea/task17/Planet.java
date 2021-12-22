@@ -22,15 +22,15 @@ enum Planet1 {
 public class Planet {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        int planet;
+        int num;
         while (true) {
             System.out.println("Выберите планету: 0) Меркурий 1) Венера 2) Земля 3) Марс 4) Юпитер 5) Сатурн 6) Уран 7) Нептун");
-            planet = sc.nextInt();
+            num = sc.nextInt();
             Planet1 pl;
-            if (planet < 8) {
-                System.out.println("Планета: " + Planet1.values()[planet].name());
-                System.out.println("Сила притяжения: " + Planet1.values()[planet].getForce() + " м/с^2");
-            } else System.out.println("Нет планеты с таким номером.");
+            if (num < 8) {
+                System.out.println("Планета: " + Planet1.values()[num].name());
+                System.out.println("Сила притяжения: " + Planet1.values()[num].getForce() + " м/с^2");
+            } else System.out.println("Такой планеты нет");
         }
     }
 }

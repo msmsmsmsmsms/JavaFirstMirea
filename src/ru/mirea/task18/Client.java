@@ -2,15 +2,15 @@ package ru.mirea.task18;
 
 public class Client
 {
-    String fullName;
+    String Name;
     String INN;
 
     Client(String fullName, String INN)
     {
-        this.fullName = fullName;
+        this.Name = fullName;
         this.INN = INN;
     }
 
-    String getFullName() { return fullName; }
+    String getFullName() { return Name; }
     String  getINN() { return INN; }
 }

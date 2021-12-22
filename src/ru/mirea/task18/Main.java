@@ -8,13 +8,13 @@ public class Main
     {
         Client[] clients = new Client[]
                 {
-                        new Client("Alexey Ivanov", "732432439266"),
-                        new Client("Anastasiya Petrova", "737826999262"),
-                        new Client("Maxim Sidorov", "732567889267"),
-                        new Client("Ekaterina Ivanova", "736789643917"),
+                        new Client("Шувалов Матвей", "111"),
+                        new Client("Петр Андросов", "222"),
+                        new Client("Павел Раужев", "333"),
+                        new Client("Стас Веселов", "444"),
                 };
 
-        System.out.print("Enter full name: ");
+        System.out.print("Введите имя: ");
         String input = new Scanner(System.in).nextLine();
         boolean contains = false;
         int clientNumber = 0;
@@ -29,12 +29,12 @@ public class Main
         try
         {
             if (contains) {
-                System.out.print("Enter INN: ");
+                System.out.print("Введите ИНН: ");
                 input = new Scanner(System.in).nextLine();
                 if (clients[clientNumber].getINN().equals(input))
-                    System.out.println("INN is valid");
-                else throw new Exception("INN is not valid");
-            } else throw new Exception("Doesn't exist name: " + input);
+                    System.out.println("Верный ИНН");
+                else throw new Exception("Неверный ИНН");
+            } else throw new Exception("Имени " + input + " нет в списке");
         }
         catch (Exception ex)
         {

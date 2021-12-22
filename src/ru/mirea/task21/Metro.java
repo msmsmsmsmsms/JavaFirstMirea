@@ -21,16 +21,18 @@ public class Metro {
     }
     public static void main(String[] args) {
         Metro metro = new Metro();
-        metro.addElement("Сокольническая");
-        metro.addElement("Замоскворецкая");
-        metro.addElement("Арбатско-Покровская");
-        metro.addElement("Филевская");
-        metro.addElement("Кольцевая");
-        metro.addElement("Калужско-Рижская");
-        metro.addElement("Таганско-Краснопреспенская");
-        metro.addElement("Калининская");
-        metro.addElement("Серпуховско-Тимирязевская");
-        metro.addElement("Люблинско-Дмитровская");
+        metro.addElement("Красная");
+        metro.addElement("Салатовая");
+        metro.addElement("Серая");
+        metro.addElement("Желтая");
+        metro.addElement("Коричневая");
+        metro.addElement("Оранжевая");
+        metro.addElement("Фиолетовая");
+        metro.addElement("Розовая");
+        metro.addElement("Бирюзовая");
+        metro.addElement("Синяя");
+
+
         System.out.println("Четные элементы списка: ");
         metro.PrintList(true);
         System.out.println(" ");
